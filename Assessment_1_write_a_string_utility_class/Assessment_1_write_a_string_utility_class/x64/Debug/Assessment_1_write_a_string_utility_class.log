@@ -1,2 +1,3 @@
 ﻿  String.cpp
-  Assessment_1_write_a_string_utility_class.vcxproj -> D:\AIE Assessments\Assessment 1\Assessment-1---Write-a-string-class\Assessment_1_write_a_string_utility_class\x64\Debug\Assessment_1_write_a_string_utility_class.exe
+D:\Assessment Task 1\As per Cliffs suggestion\Assessment 1 Attempt 2\Assessment_1_write_a_string_utility_class\Assessment_1_write_a_string_utility_class\String.cpp(43,10): error C2440: 'return': cannot convert from 'int' to 'char &'
+D:\Assessment Task 1\As per Cliffs suggestion\Assessment 1 Attempt 2\Assessment_1_write_a_string_utility_class\Assessment_1_write_a_string_utility_class\String.cpp(105,9): error C2065: 'input': undeclared identifier

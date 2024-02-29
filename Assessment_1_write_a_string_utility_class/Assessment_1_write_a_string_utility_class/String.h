@@ -1,27 +1,31 @@
 #pragma once
+#include <iostream>
 #ifndef CUSTOM_STRING_HEADER
 #define CUSTOM_STRING_HEADER
-
+#include <cstddef>
+#include <cstring>
 
 class String
 {
 public:
 
-	String();  
+	String();  // Constructor (with no return type)
 	String(const char* _str);
 
 	String(const String& _other);
 
-	~String();
+	~String();  // Destructor
+	
+	int ID = 0;  // example code from cliff
+	//int dbug(int v); //  example code from cliff
 
-	size_t Length() const;
-    
+
+    size_t Length() const;  // Returns the length of the string
 
 
 public:
-
-	
-	char& CharacterAt(size_t _index); 
+		
+	char& CharacterAt(size_t _index);  // Returns the character at the specified index
 	const char& CharacterAt(size_t _index) const;
 	
 	bool EqualTo(const String& _other) const;
@@ -46,19 +50,22 @@ public:
 	
 	bool operator==(const String& _other);
 	bool operator!=(const String& _other);
-	bool operator<(const String& _other);
-
-
+	
 	String& operator=(const String& _str);
 	
 	char& operator[](size_t _index);
 	const char& operator[](size_t _index) const;
 
+	bool operator<(const String& _other);
+	bool operator>(const String& _other);
+
 
 
 private:
 
-	char* data; // Pointer to a dynamically allocated character array
+	/*
+	* Put your internal data structures and members here (this section can be private or public)
+	*/
 };
 
 #endif
